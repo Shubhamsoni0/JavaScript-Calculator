@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaScript Programm</title>
+<style>
+#pnl{
+    font-family: 'myCalCulatorFont';
+    
+ }
+ 
+ @font-face {
+   font-family: 'myCalCulatorFont';
+   src: url('C://Users//piyush//Desktop//Calculatoe Program//digital-7 (mono).ttf'); 
+   
+ }
+ 
+</style>
+
+	</head>
+
+
+<body>
+    <center>
+        <br>
+        <h1 style="color:#000000; font-size:50px;">JavaScript Calculator</h1>
+        <hr color="black">
+        <form name="calculator">
+            <div style="width:280px; padding-top:5px; padding-bottom:5px; background-color:#000000;">
+                <input placeholder="0" name="display" id="pnl" style="width:250px; height:60px; font-size:60px;  text-align:right; border-radius:8px; margin:3px; padding-bottom:5px; background-color:#ACAEA1;" disabled="disabled" />
+                <br/>
+                <input type="button" value="(" onclick="document.calculator.display.value +='('" style="width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value=")" onclick="document.calculator.display.value +=')'" style="width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="%" onclick="document.calculator.display.value +='%'" style="width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="AC" onclick="document.calculator.display.value=''" style="width:60px; height:60px; font-size:30px; background-color:#EAD53D; color:white; border-radius:8px; margin:3px;" />
+                <br/>
+                <input type="button" value="7" onclick="document.calculator.display.value +='7'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="8" onclick="document.calculator.display.value +='8'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="9" onclick="document.calculator.display.value +='9'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="/" onclick="document.calculator.display.value +='/'" style="width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;" />
+                <br>
+                <input type="button" value="4" onclick="document.calculator.display.value +='4'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="5" onclick="document.calculator.display.value +='5'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="6" onclick="document.calculator.display.value +='6'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="X" onclick="document.calculator.display.value +='*'" style="width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;" />
+                <br>
+                <input type="button" value="1" onclick="document.calculator.display.value +='1'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="2" onclick="document.calculator.display.value +='2'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="3" onclick="document.calculator.display.value +='3'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="-" onclick="document.calculator.display.value +='-'" style="width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;" />
+                <br/>
+                <input type="button" value="0" onclick="document.calculator.display.value +='0'" style="width:60px; height:60px; font-size:30px; background-color:#636260; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="." onclick="document.calculator.display.value +='.'" style="width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="=" onclick="document.calculator.display.value = eval(document.calculator.display.value)" style="width:60px; height:60px; font-size:30px; background-color:#A8A7A5; cursor:pointer; outline:none; color:white; border-radius:8px; margin:3px;" />
+                <input type="button" value="+" onclick="document.calculator.display.value +='+'" style="width:60px; height:60px; font-size:30px; background-color:#A8A7A5; color:white; border-radius:8px; margin:3px;" />
+                <!-- function backspace() {
+numbers=document.getElementById('num1').value; 
+lnth=numbers.length-1;
+newnum=numbers.substring(0,lnth);
+document.getElementById('num1').value=newnum;
+}  -->
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>
